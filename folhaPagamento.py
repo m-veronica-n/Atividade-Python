@@ -10,6 +10,7 @@
 # Total de descontos : R$ 165,00
 # Salário Liquido : R$ 935,0
 
+
 valorHora = float(input("Quanto você recebe por hora: "))
 horasTrabalhada = float(
     input("Quantas horas você trabalhou esse mês: ")
