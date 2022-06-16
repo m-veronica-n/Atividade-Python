@@ -10,12 +10,12 @@
 # Total de descontos : R$ 165,00
 # Salário Liquido : R$ 935,0
 
-
-valor_da_hora = float(input("Digite quanto você recebe por hora: "))
-horas_trabalhadas = float(
-    input("Digite quantas horas você trabalhou esse mês: ")
+valorHora = float(input("Quanto você recebe por hora: "))
+horasTrabalhada = float(
+    input("Quantas horas você trabalhou esse mês: ")
 )
-salario_bruto = valor_da_hora * horas_trabalhadas
+
+salario_bruto = valorHora * horasTrabalhada
 if salario_bruto <= 900:
     desconto_ir = 0.0
 elif salario_bruto <= 1500:
@@ -32,10 +32,10 @@ total_de_descontos = IR + INSS
 salario_liquido = salario_bruto - total_de_descontos
 
 print(
-    f"\nSalário Bruto     : R${salario_bruto:.2f}",
-    f"\n(-) IR (5%)       : R${IR:.2f}",
-    f"\n(-) INSS ( 10%)   : R${INSS:.2f}",
-    f"\nFGTS (11%)        : R${FGTS:.2f}",
-    f"\nTotal de descontos: R${total_de_descontos:.2f}",
-    f"\nSalário Liquido   : R${salario_liquido:.2f}",
+    f"\nSalário Bruto     -> R${salario_bruto:.2f}",
+    f"\n(-) IR (5%)       -> R${IR:.2f}",
+    f"\n(-) INSS ( 10%)   -> R${INSS:.2f}",
+    f"\nFGTS (11%)        -> R${FGTS:.2f}",
+    f"\nTotal de descontos-> R${total_de_descontos:.2f}",
+    f"\nSalário Liquido   -> R${salario_liquido:.2f}",
 )
